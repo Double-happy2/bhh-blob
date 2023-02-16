@@ -1,0 +1,20 @@
+import{_ as a,c as s,o as n,a as e}from"./app.5358fa95.js";const h=JSON.parse('{"title":"数据类型转换","description":"","frontmatter":{},"headers":[{"level":2,"title":"隐式转换","slug":"隐式转换","link":"#隐式转换","children":[]},{"level":2,"title":"强制转换","slug":"强制转换","link":"#强制转换","children":[]}],"relativePath":"js/jsbase/datatranform.md"}'),l={name:"js/jsbase/datatranform.md"},p=e(`<h1 id="数据类型转换" tabindex="-1">数据类型转换 <a class="header-anchor" href="#数据类型转换" aria-hidden="true">#</a></h1><p>数据类型转换分为显示转换和隐式转换</p><h2 id="隐式转换" tabindex="-1">隐式转换 <a class="header-anchor" href="#隐式转换" aria-hidden="true">#</a></h2><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-theme-palenight" tabindex="0"><code><span class="line"><span style="color:#A6ACCD;">在运算过程中自动发生的转换</span></span>
+<span class="line"><span style="color:#A6ACCD;">数字+字符串   数字转为字符串   2+&#39;3&#39;  //&#39;23&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">数字+布尔型   布尔型转为数字 true-&gt;1  false-&gt;0  2+true  //3  2+false  //2</span></span>
+<span class="line"><span style="color:#A6ACCD;">字符串+布尔型   布尔型转为字符串  &#39;3&#39;+true  //&#39;3true&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><blockquote><p>Ps：加号(+)的作用:① 数值之间的加法运算;② 字符串之间的拼接 NaN：Not a Number，不是一个数字，将一个值转为数字的时候，没有成功得到数字结果就是 NaN,NaN 和任何数字执行数学运算，结果还是 NaN</p></blockquote><h2 id="强制转换" tabindex="-1">强制转换 <a class="header-anchor" href="#强制转换" aria-hidden="true">#</a></h2><p>强制转为数字,调用 Number()</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-theme-palenight" tabindex="0"><code><span class="line"><span style="color:#A6ACCD;">Number(&#39;1&#39;)  //1</span></span>
+<span class="line"><span style="color:#A6ACCD;">Number(&#39;1a&#39;)  //NaN</span></span>
+<span class="line"><span style="color:#A6ACCD;">Number(true)  //1</span></span>
+<span class="line"><span style="color:#A6ACCD;">Number(false)  //0</span></span>
+<span class="line"><span style="color:#A6ACCD;">Number(undefined)  //NaN</span></span>
+<span class="line"><span style="color:#A6ACCD;">Number(null)  //0</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>强制转整型 parseInt()用于将字符串和小数点位整型，其它转换的结果为 NaN</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-theme-palenight" tabindex="0"><code><span class="line"><span style="color:#A6ACCD;">parseInt(1.9) //1</span></span>
+<span class="line"><span style="color:#A6ACCD;">parseInt(&#39;3.14&#39;)  //3</span></span>
+<span class="line"><span style="color:#A6ACCD;">parseInt(&#39;6a6&#39;)  //6</span></span>
+<span class="line"><span style="color:#A6ACCD;">parseInt(&#39;a66&#39;)  //NaN</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>强制转换为浮点型 parseFloat()用于将字符串强制转换为浮点型</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-theme-palenight" tabindex="0"><code><span class="line"><span style="color:#A6ACCD;">parseFloat(&#39;3.14&#39;)  //3.14</span></span>
+<span class="line"><span style="color:#A6ACCD;">parseFloat(&#39;6a&#39;)  //6</span></span>
+<span class="line"><span style="color:#A6ACCD;">parseFloat(&#39;a6.18&#39;)  //NaN</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>强制转换为字符串(了解) toString(),用于将数值和布尔型转为字符串</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-theme-palenight" tabindex="0"><code><span class="line"><span style="color:#A6ACCD;">var n=5;</span></span>
+<span class="line"><span style="color:#A6ACCD;">var str=n.toString();  //&#39;5&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div>`,14),t=[p];function o(c,r,i,d,C,A){return n(),s("div",null,t)}const y=a(l,[["render",o]]);export{h as __pageData,y as default};
